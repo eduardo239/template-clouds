@@ -7,15 +7,15 @@
     <title>Template - Clouds</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/dropdown.css" />
+    <link rel="stylesheet" href="./css/menu_mobile.css" />
   </head>
   <body>
-    <header class="fixed-top bg-light">
+    <header class="fixed-md-top bg-light">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-4">
             <!-- logo -->
-            <nav class="navbar navbar-expand-md navbar-light">
+            <nav class="menu-a navbar navbar-expand-md navbar-light">
               <div class="container-fluid">
                 <a class="navbar-brand logo" href="#">IXX COMP</a>
               </div>
@@ -23,7 +23,7 @@
           </div>
           <div class="col-md-4">
             <!-- menu -->
-            <ul class="nav">
+            <ul class="menu-b nav">
               <li class="nav-item">
                 <a class="nav-link active" href="#">Active</a>
               </li>
@@ -34,11 +34,23 @@
                 <a class="nav-link" href="#">Secondary</a>
               </li>
             </ul>
+
+            <ul class="menu-mobile justify-content-md-center nav">
+              <li class="nab-item">
+                <a class="nav-link" href="#">link a</a>
+              </li>
+              <li class="nab-item">
+                <a class="nav-link" href="#">link b</a>
+              </li>
+              <li class="nab-item">
+                <a class="nav-link" href="#">link extra</a>
+              </li>
+            </ul>
             <!--  -->
           </div>
           <div class="col-md-4">
             <!-- sign in -->
-            <nav class="navbar navbar-expand-md navbar-light">
+            <nav class="menu-c navbar navbar-expand-md navbar-light">
               <div class="container-fluid">
                 <a class="ms-auto btn btn-outline-primary" href="#">Sign In</a>
               </div>
@@ -48,7 +60,7 @@
       </div>
     </header>
     <!-- end header -->
-    <div class="hero py-3 text-white bg-dark">
+    <div class="hero py-4 text-white bg-dark">
       <div class="container">
         <div class="row min-vh-70 align-items-center">
           <div class="col-md-6 text-sm-start text-center">
@@ -227,14 +239,7 @@
     <div class="section-5 my-3 py-3">
       <div class="container">
         <div class="row min-vh-70 align-items-center">
-          <div class="col-md-6 text-sm-end text-center">
-            <h2 class="mb-3">Creating a table in PostgreSQL</h2>
-            <p class="mb-4">
-              In PostgreSQL, we can create a table in two ways:
-            </p>
-            <button class="btn btn-outline-secondary">Watch</button>
-          </div>
-          <div class="col-md-6 text-sm-start text-center">
+          <div class="col-md-6 order-md-2 text-sm-start text-center">
             <div class="">
               <img
                 src="./assets/Illustration/Victory@.svg"
@@ -242,6 +247,14 @@
                 class="mx-auto d-block illustration"
               />
             </div>
+          </div>
+
+          <div class="col-md-6 order-md-1 text-sm-end text-center">
+            <h2 class="mb-3">Creating a database in PostgreSQL</h2>
+            <p class="mb-4">
+              In PostgreSQL, we can create a table in two ways:
+            </p>
+            <button class="btn btn-outline-secondary">Watch</button>
           </div>
         </div>
       </div>
